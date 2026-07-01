@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "triton-target-attn-absorb"
+version = "0.1.0"
+description = "Ragged target-attention kernels implemented in Triton for H=8, D_H=32."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch",
+  "triton",
+  "packaging",
+  "ninja",
+  "flash-attn",
+  "tensorflow",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["triton_target_attn_absorb*"]

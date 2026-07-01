@@ -1,0 +1,6 @@
+torch
+triton
+packaging
+ninja
+flash-attn
+tensorflow

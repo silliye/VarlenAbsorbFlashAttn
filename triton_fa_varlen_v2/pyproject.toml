@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "triton-fa-varlen-v2"
+version = "0.1.0"
+description = "Packed variable-length FlashAttention kernels implemented in Triton."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch",
+  "triton",
+  "packaging",
+  "ninja",
+  "flash-attn",
+  "tensorflow",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["triton_fa_varlen_v2*"]
