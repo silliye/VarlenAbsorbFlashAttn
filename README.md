@@ -133,6 +133,4 @@ python -m triton_target_attn_absorb.test_smoke \
     └── fixtures/
 ```
 
-## License
 
-Add a `LICENSE` file before publishing.
