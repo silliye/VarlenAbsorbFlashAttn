@@ -1,6 +1,8 @@
 # VarlenAbsorbFlashAttn
 
 An efficient fusion matrix absorption operator supporting variable-length FlashAttention. - 2026.7.1 in BeiJing
+
+
 一个高效的融合矩阵吸收的支持变长的Flash-attn算子，已经在KuaiShou精排模型中使用，欢迎大家魔改
 
 This repository contains two Triton kernel packages:
